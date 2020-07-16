@@ -1,0 +1,21 @@
+{
+  "name": "pptr-visual",
+  "version": "1.0.0",
+  "description": "Visual Regression Testing with pptr",
+  "main": "index.js",
+  "scripts": {
+    "test-snapshots": "jest --config=tests-snapshots/jest.config.js --detectOpenHandles --forceExit",
+    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
+  },
+  "keywords": [
+    "visual", "testing", "pptr", "Puppeteer"
+  ],
+  "author": "Praveen Kumar Natarajan",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.1.0",
+    "jest-image-snapshot": "^4.0.2",
+    "prettier": "^2.0.5",
+    "puppeteer": "^5.1.0"
+  }
+}
