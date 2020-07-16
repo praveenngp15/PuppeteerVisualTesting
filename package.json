@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test-snapshots": "jest --config=tests-snapshots/jest.config.js --detectOpenHandles --forceExit",
-    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
+    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+    "test:percy":"percy exec -- jest -i .tests-snapshots/__tests__/percy.test.js"
   },
   "keywords": [
-    "visual", "testing", "pptr", "Puppeteer"
+    "visual",
+    "testing",
+    "pptr",
+    "Puppeteer"
   ],
   "author": "Praveen Kumar Natarajan",
   "license": "ISC",
   "dependencies": {
+    "@percy/puppeteer": "^1.1.0",
     "jest": "^26.1.0",
     "jest-image-snapshot": "^4.0.2",
     "prettier": "^2.0.5",

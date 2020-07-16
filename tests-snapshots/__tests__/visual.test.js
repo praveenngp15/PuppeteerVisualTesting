@@ -75,12 +75,5 @@ describe('Visual Testing', function(){
         })
 
         await page.waitFor(5000)
-
-    /*    const image = await page.screenshot();
-        expect(image).toMatchImageSnapshot({
-            failureThreshold:0.01,
-            failureThresholdType:'percent'
-        })
-        */
-    })
+   })
 })
